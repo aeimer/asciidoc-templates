@@ -1,0 +1,85 @@
+= asciidoc templates
+
+This is my personal recommendation for
+https://asciidoc.org[AsciiDoc]
+templates to be used in an enterprise environment.
+This collection was created for my
+https://github.com/aeimer/talk-history[talks]
+about how to document better.
+
+== Templates
+
+Templates provided:
+
+* <<tmpl-adr>> -- Any Decission Record
+* <<tmpl-blpm>> -- Blameless Post Mortem
+
+=== ADR [[tmpl-adr]]
+
+[sidebar]
+--
+Template: link:template-adr.adoc[]
+--
+
+"(Any|Architecture) Decission Record" is a best practice to systematically find good technical solutions and document these decission.
+This template is heavily inspired by
+https://adr.github.io/madr/decisions/adr-template.html[adr/madr]. 
+The filenames should be `adr-0000-some-short-title.adoc`.
+
+The ADR states are defined as following, the emojis helps to show the status quickly.
+
+.ADR states
+[cols="^2,3,16"]
+|===
+|Emoji |Status |Description
+
+|⚙️
+|`proposed`
+|The ADR is currently WIP or proposed for approval.
+If the ADR is complex, it is usually written on a feature-branch with an MR.
+
+|🚫
+|`rejected`
+|The ADR got rejected and the proposed changes will not be implemented.
+
+|✅
+|`accepted`
+|The ADR is accepted, the changes are getting or already being implemented.
+
+|☑️
+|`deprecated`
+|The ADR is not relevant anymore.
+
+|⏭️
+|`superseded`
+|An ADR with a similar topic has been accepted and "overrides" the decisions taken.
+
+|🗑️
+|`discarded`
+|The ADR has been created but never got finished, usually due to changed context.
+|===
+
+=== BLPM [[tmpl-blpm]]
+
+[sidebar]
+--
+Template: link:template-blpm.adoc[]
+--
+
+A "Blameless Post Mortem" is a
+https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[best practice]
+to review an outage with all stakeholders and find a root cause.
+This should ensure to not have the problem ever again with the action items defined.
+
+Template is inspired by the Google book "SRE", the template is adapted from
+https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^].
+
+== Useful links
+
+* https://antora.org[Antora]
+* https://vale.sh[Vale]
+* https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/[AsciiDoctor Quick Reference]
+* https://nick.groenen.me/notes/one-sentence-per-line/[One sentence per line rule]
+* https://github.com/joelparkerhenderson/architecture-decision-record[Joels ADR]
+* https://www.blameless.com/blog/what-are-blameless-postmortems-do-they-work-how[blamess.com]
+* https://github.com/dastergon/postmortem-templates/blob/master/templates/postmortem-template-srebook.md?plain=1[github.com/dastergon/postmortem-templates^]

@@ -1,0 +1,125 @@
+= BLPM 0000: {short title of the incident}
+
+[cols="1,3"]
+|===
+|*status*
+// `pending` / `prepared` / `completed`
+| #STATUS#
+
+|*date*
+// YYYY-MM-DD when the BLPM was last updated
+| #DATE#
+
+|*authors*
+a|
+// list everyone involved in the BLPM
+* #AUTHOR#
+
+|*informed*
+a|
+// list everyone who is kept up-to-date on progress; and with whom there is a one-way communication
+* _n/a_
+|===
+
+////
++++ HELP +++
+If you are unsure what to write, checkout this example postmortem:
+https://sre.google/sre-book/example-postmortem/
+////
+
+.Summary
+****
+////
+Add a short management summary here.
+Not longer than 3 sentences.
+Usually done at the end or after the BLPM meeting.
+////
+Lorem ipsum ...
+****
+
+== Impact
+
+// Describe how the affected service and its dependants were impacted.
+
+== Root Causes
+
+////
+Describe what the root cause was.
+Is usually helps to adapt the 5-why-method for this.
+////
+
+== Trigger
+
+// Describe the immediate problem which caused the problem to occur.
+
+== Resolution
+
+// Describe the solution to mitigate the problem.
+
+== Detection
+
+// Describe how the problem was found (by alerts, metrics etc.).
+
+== Action Items
+
+////
+> Plan the Work and Work the Plan
+As in Google SRE book described action items are defined in the BLPM.
+They aim to take action on identified bugs/issues to avoid this problem to appear again.
+////
+
+[cols="6,1,2,1"]
+|===
+|Action Item |Type |Owner |Status
+
+|Lorem ipsum
+|`mitiage` / `prevent` / `other`
+|Joe
+|`TODO` / `DONE`
+|===
+
+
+== Lessons Learned
+
+=== What went well
+
+* This went well
+
+=== What went wrong
+
+* This went wrong
+
+=== Where we got lucky
+
+* This was lucky
+
+== Timeline
+
+////
+List here all remarkable events regarding the problem.
+On specific time entries add the labels:
+- OUTAGE BEGINS
+- INCIDENT BEGINS
+- OUTAGE MITIGATED
+- OUTAGE ENDS
+- INCIDENT ENDS
+
+Make sure KEEP THE STYLE in the list.
+////
+
+_All times are in UTC._
+
+2024-01-01::
+
+* `15:01` `INCIDENT BEGINS` +
+Lorem ipsum
+
+* `15:02` +
+Lorem ipsum
+
+== Supporting information
+
+// Add any further (important) info here.
+
+_N/A_
+// * item 1
